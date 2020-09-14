@@ -5,7 +5,7 @@ Abrir uma imagem colorida, visualizar e salvar.
 #library import
 import cv2
 #loading the image into the variable img
-img = cv2.imread('image.jpg')
+img = cv2.imread('../input_images/image.jpg')
 #displaying the image
 cv2.imshow('image', img)
 #waitkey makes the image show until 0 is pressed
