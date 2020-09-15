@@ -10,5 +10,5 @@ img = cv2.imread('../input_images/image.jpg')
 cv2.imshow('image', img)
 #waitkey makes the image show until 0 is pressed
 cv2.waitKey(0)
-#storing the image
+#storing the resulting image
 cv2.imwrite('result_image.jpg', img)
