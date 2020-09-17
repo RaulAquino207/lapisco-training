@@ -6,7 +6,16 @@ Continue infinitamente capturando, transformando em tom de cinza e vizualizando.
 import cv2 as cv
 #initialize the camera
 cap = cv.VideoCapture(0)
-while 1:
+
+while (True):
+    ret,frame = cap.read()
+    grayscale_img = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+    cv.imshow('Video', grayscale_img)
+    if cv.waitKey(1) & 0xFF == ord('q'):
+        break
+'''
+i = 0
+while i < 10:
     #capture each frame
     ret, frame = cap.read()
 
@@ -17,5 +26,8 @@ while 1:
     #show the result
     #cv.imshow('Video', canny_img)
     cv.imshow('Video', grayscale_img)
+    cv.imwrite(f"frame_video{i + 1}.jpg", grayscale_img)
+    i += 1
     if cv.waitKey(1) & 0xFF == ord('q'):
         break
+'''
