@@ -13,7 +13,7 @@ img = cv.imread('../input_images/image.jpg')
 #converting the RGB image to an HSV image (COLOR_BGR2HSV)
 hsv_img = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 #the cv2 split function returns the 3 channels separately
-h,s,v = cv.split(img)
+h,s,v = cv.split(hsv_img)
 #showing the images
 cv.imshow('HSV', hsv_img)
 cv.imshow('H',h)
