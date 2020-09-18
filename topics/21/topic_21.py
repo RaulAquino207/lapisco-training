@@ -1,17 +1,15 @@
 '''
-Questão 20
-Abrir uma imagem colorida, transformar para tom de cinza e aplique a técnica Crescimento de Regiões (Region Growing).
-Para isto, inicialmente faça uma imagem com dimensões 320×240 no paint, onde o fundo da imagem seja branco e exista
-um círculo preto no centro. Utilize algum ponto dentro do circulo preto como semente, onde você deve determinar este
-ponto analisando imagem previamente.
-A regra de adesão do método deve ser: “Sempre que um vizinho da região possuir tom de cinza menor que 127, deve-se agregar
-este vizinho à região”.
-Aplique o Crescimento de Regiões de forma iterativa, em que o algoritmo irá estabilizar apenas quando a região parar de crescer.
+Questão 21
+Faça o mesmo que o tópico 21, alterando apenas o modo de inicializar a semente, onde esta deve ser inicializada
+com um click na imagem apresentada pela OpenCv.
 '''
 
 import cv2
 import numpy as np
 from numba import njit
+
+seed = (0, 0)
+
 
 @njit
 def region_growing(image, seed=None):
@@ -21,7 +19,7 @@ def region_growing(image, seed=None):
 
     # Get the seed point
     xc, yc = seed
-    print(xc,yc)
+    print(xc, yc)
     # Create a matrix that will contain the segmented region
     segmented = np.zeros_like(image)
 
@@ -65,8 +63,17 @@ def region_growing(image, seed=None):
                     if image[row + 1, col + 1] < 127:
                         segmented[row + 1, col + 1] = 255
                         current_found += 1
-        cv2.imshow('')
+
     return segmented
+
+
+def mouse_event(event, x, y, flags, param):
+    # Verify if the left button is pressed
+    if event == cv2.EVENT_LBUTTONDOWN:
+        global seed
+
+        # Update the seed point
+        seed = (y, x)
 
 
 if __name__ == '__main__':
@@ -76,11 +83,15 @@ if __name__ == '__main__':
     # Transform to grayscale
     grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+    # Create a window, show the original image and wait for the click
+    cv2.namedWindow('Original Image', 1)
+    cv2.imshow('Original Image', grayscale_image)
+    cv2.setMouseCallback('Original Image', mouse_event)
+    cv2.waitKey(0)
+
     # Apply the region growing algorithm
-    segmented_image = region_growing(grayscale_image,
-                                     seed=(int(grayscale_image.shape[0]/2), int(grayscale_image.shape[1]/2)))
+    segmented_image = region_growing(grayscale_image, seed)
 
     # Show the result
     cv2.imshow('Segmented image', segmented_image)
     cv2.waitKey(0)
-
