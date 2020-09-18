@@ -12,7 +12,9 @@ Aplique o Crescimento de Regiões de forma iterativa, em que o algoritmo irá es
 import cv2
 import numpy as np
 from numba import njit
-
+'''
+After performing some tests without using the "njit" I realized that it uses a pipeline to carry out the operations faster
+'''
 @njit
 def region_growing(image, seed=None):
 
@@ -31,7 +33,7 @@ def region_growing(image, seed=None):
     # Loop through the image until the region stop growing
     current_found = 0
     previous_points = 1
-
+    i = 0
     while previous_points != current_found:
 
         previous_points = current_found
@@ -41,31 +43,43 @@ def region_growing(image, seed=None):
                 # Verify if we reach the ROI and search through the neighborhood to see if the pixel is of the same
                 # object, then if the pixel is part of the object put them in the segmented image
                 if segmented[row, col] == 255:
+                    print('entrou no IF')
                     if image[row - 1, col - 1] < 127:
+                        # print('a')
                         segmented[row - 1, col - 1] = 255
                         current_found += 1
                     if image[row - 1, col] < 127:
+                        # print('b')
                         segmented[row - 1, col] = 255
                         current_found += 1
                     if image[row - 1, col + 1] < 127:
+                        # print('c')
                         segmented[row - 1, col + 1] = 255
                         current_found += 1
                     if image[row, col - 1] < 127:
+                        # print('d')
                         segmented[row, col - 1] = 255
                         current_found += 1
                     if image[row, col + 1] < 127:
+                        # print('e')
                         segmented[row, col + 1] = 255
                         current_found += 1
                     if image[row + 1, col - 1] < 127:
+                        # print('f')
                         segmented[row + 1, col - 1] = 255
                         current_found += 1
                     if image[row + 1, col] < 127:
+                        # print('g')
                         segmented[row + 1, col] = 255
                         current_found += 1
                     if image[row + 1, col + 1] < 127:
+                        # print('h')
                         segmented[row + 1, col + 1] = 255
                         current_found += 1
-        cv2.imshow('')
+    #         i += 1
+    #         cv2.imwrite(f"frame_{i + 1}.jpg", segmented)
+    # print('executando')
+    i += 1
     return segmented
 
 
