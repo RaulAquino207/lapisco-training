@@ -86,12 +86,12 @@ def mouse_event(event, x, y, flags, param):
 
 if __name__ == '__main__':
     # Read a rgb image
-    image = cv2.imread('../input_images/placa-de-parada-obrigatória.jpg')
+    image = cv2.imread('../input_images/canada_natation.jpg')
 
     # This algorithm is not the most fast implementation, but is one of the most easy to understand. So, we will resize
     # the image to execute the code faster. Note: it is not possible to use the numba package, since it not interpret
     # the python form of rgb image required in the question
-    image = cv2.resize(image, (0, 0), fx=0.4, fy=0.4)
+    image = cv2.resize(image, (0,0), fx=0.4, fy=0.4)
 
     # Create a window, show the original image and wait for the click
     cv2.namedWindow('Original Image', 1)
