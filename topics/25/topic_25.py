@@ -1,4 +1,5 @@
 '''
+Questaão 25
 Abrir uma imagem colorida, transformar para tom de cinza e aplique a técnica Crescimento de Regiões (Region Growing).
 Para isto, faça no paint uma imagem 640×480 com alguns objetos em preto e o fundo seja branco.
 Neste tópico irão existir mais de um objeto para segmentar, então existe mais de uma região.
