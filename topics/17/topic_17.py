@@ -14,6 +14,7 @@ grayscale_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 original_hist = np.zeros([256], np.uint8)
 equalized_hist = np.zeros([256], np.uint8)
+#flatten return a copy of the array collapsed into one dimension.
 img_flat = grayscale_img.flatten()
 
 for pixel in img_flat:
@@ -32,10 +33,15 @@ cdf = np.array(cdf)
 #normalize the cdf to be between 0-255
 normal_cdf = ((cdf - cdf.min())*255)/(cdf.max() - cdf.min())
 normal_cdf = normal_cdf.astype('uint8')
-
 equalized_image = normal_cdf[img_flat]
-
 equalized_image = np.reshape(equalized_image, grayscale_img.shape)
+print('equalized_image = normal_cdf[img_flat]')
+print('equalized',equalized_image[:20], equalized_image.shape)
+print('normal_cdf',normal_cdf[:20], normal_cdf.shape)
+print('img_flat',img_flat[:20], img_flat.shape)
+
+
+
 
 plt.figure(1)
 plt.subplot(221)

@@ -43,7 +43,6 @@ def region_growing(image, seed=None):
                 # Verify if we reach the ROI and search through the neighborhood to see if the pixel is of the same
                 # object, then if the pixel is part of the object put them in the segmented image
                 if segmented[row, col] == 255:
-                    print('entrou no IF')
                     if image[row - 1, col - 1] < 127:
                         # print('a')
                         segmented[row - 1, col - 1] = 255
