@@ -9,7 +9,7 @@ import numpy as np
 
 img = cv.imread('../input_images/objects_canny.png')
 grayscale_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-canny_img = cv.Canny(img, 80, 255)
+canny_img = cv.Canny(grayscale_img, 80, 255)
 
 contours, hierarchy = cv.findContours(canny_img, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 contours_img = np.copy(img)
