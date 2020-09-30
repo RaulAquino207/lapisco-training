@@ -1,8 +1,8 @@
 '''
-Questão 43
-Após fazer a questão 42, apresentem cada objeto na imagem, pintando o mesmo ou apresentando quadrados ao seus redor,
-ou ambos.
+Questão 44
+Após fazer a questão 42, gerem subimagens com cada objeto encontrado.
 '''
+
 import cv2
 import numpy as np
 import random
@@ -51,7 +51,7 @@ print(len(blobs))
 rows, cols = image.shape[:2]
 
 # Draw blobs
-for k in blobs:
+for i, k in enumerate(blobs):
 
     # Get the coordinates of up_left and bottom_right
     x_up_left = int(k.pt[0] - k.size)
@@ -73,6 +73,10 @@ for k in blobs:
 
     # Draw the rectangle
     cv2.rectangle(image, (x_up_left + 15, y_up_left + 15), (x_bottom_right - 15, y_bottom_right - 15), (255, 0, 0), 2)
+
+    crop = image[y_up_left + 15:y_bottom_right - 15, x_up_left + 15:x_bottom_right - 15]
+    cv2.imshow('Object ' + str(i + 1), crop)
+    cv2.waitKey(10)
 
 # Show the result
 cv2.imshow('Result', image)
