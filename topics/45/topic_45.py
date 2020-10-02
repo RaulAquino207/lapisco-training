@@ -1,8 +1,10 @@
 '''
-Questão 43
-Após fazer a questão 42, apresentem cada objeto na imagem, pintando o mesmo ou apresentando quadrados ao seus redor,
-ou ambos.
+Questão 45
+Após fazer a questão 42, apliquem filtros de altura, largura e área para selecionar apenas os contronos que desejam.
+Apliquem outros filtros para ver o que acontece. Peçam para imprimir os valor encontrados que dá pra ter uma noção melhor dos
+valores que devem ser usados nos filtros.
 '''
+
 import cv2
 import numpy as np
 import random
@@ -22,18 +24,18 @@ params = cv2.SimpleBlobDetector_Params()
 # Filter by Area.
 params.filterByArea = True
 params.minArea = 20
-params.maxArea = 40000
+params.maxArea = 10000
 
 # Filter by Circularity
 params.filterByCircularity = False
 params.minCircularity = 0.1
 
 # Filter by Convexity
-params.filterByConvexity = False
-params.minConvexity = 0.87
+params.filterByConvexity = True
+params.minConvexity = 0.7
 
 # Filter by Inertia
-params.filterByInertia = False
+params.filterByInertia = True
 params.minInertiaRatio = 0.8
 
 # Distance Between Blobs
@@ -44,25 +46,21 @@ detector = cv2.SimpleBlobDetector_create(params)
 
 # Detect objects
 blobs = detector.detect(canny_image)
-print(blobs)
+
 # Print how many objects are in the image
 print(len(blobs))
 
 rows, cols = image.shape[:2]
 
 # Draw blobs
-for k in blobs:
+for i, k in enumerate(blobs):
 
     # Get the coordinates of up_left and bottom_right
-    print(k)
-    print(k.size)
     x_up_left = int(k.pt[0] - k.size)
     y_up_left = int(k.pt[1] - k.size)
 
     x_bottom_right = int(k.pt[0] + k.size)
     y_bottom_right = int(k.pt[1] + k.size)
-    print('coordinates')
-    print(x_up_left, y_up_left, x_bottom_right, y_bottom_right)
 
     # Verify if this coordinates are inside the limits of the image, correct if it is not inside the limits
     if x_up_left < 0:
@@ -75,11 +73,16 @@ for k in blobs:
     if y_bottom_right > rows:
         y_bottom_right = rows
 
-    # Draw the rectangle
-    cv2.rectangle(image, (x_up_left + 15, y_up_left + 15), (x_bottom_right - 15, y_bottom_right - 15), (255, 0, 0), 2)
+    # # Draw the rectangle
+    # cv2.rectangle(image, (x_up_left + 15, y_up_left + 15), (x_bottom_right - 15, y_bottom_right - 15), (255, 0, 0), 2)
 
-# Show the result
-cv2.imshow('Result', image)
+    # Crop each object
+    crop = image[y_up_left + 15:y_bottom_right - 15, x_up_left + 15:x_bottom_right - 15]
+
+    # Show the objects
+    cv2.imshow('Object ' + str(i + 1), crop)
+    cv2.waitKey(10)
+
 
 # Show the input image
 cv2.imshow('Input grayscale image', grayscale_image)
