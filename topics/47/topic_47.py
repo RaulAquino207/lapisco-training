@@ -1,9 +1,6 @@
 '''
-Questão 46
-As questões 46-52 serão sobre extração de atributos
-
-Abrir uma sequência de imagens coloridas, transformar para tom de cinza cada imagem e obtenha os momentos ESTATISTICOS
-de todas estas imagens. Imprima os resultados de cada imagem em um arquivo e na tela do prompt de comandos.
+Abrir uma sequência de imagens coloridas, transformar para tom de cinza cada imagem e obtenha os momentos CENTRAIS de todas
+estas imagens. Imprima os resultados de cada imagem em um arquivo e na tela do prompt de comandos.
 Cada linha do arquivo gerado deve representar os atributos obtidos em uma imagem.
 '''
 
@@ -14,9 +11,9 @@ import glob
 import csv
 
 
-def extract_spatial_moments(images):
-    print('[INFO] Extracting spatial moments.')
-    spatial_moments = []
+def extract_central_moments(images):
+    print('[INFO] Extracting central moments.')
+    central_moments = []
 
     for i, image in enumerate(images):
 
@@ -30,15 +27,14 @@ def extract_spatial_moments(images):
 
         # Extract the moments
         moments = cv2.moments(file)
-        print('MOMENTS')
-        print(moments)
+
         # Create a list with the features extracted
-        spatial_moments.append([moments['m00'], moments['m10'], moments['m01'], moments['m20'], moments['m11'],
-                                moments['m02'], moments['m30'], moments['m21'], moments['m12'], moments['m03']])
+        central_moments.append([moments['mu20'], moments['mu11'], moments['mu02'], moments['mu30'],
+                                moments['mu21'], moments['mu12'], moments['mu03']])
 
     print('\n')
 
-    return spatial_moments
+    return central_moments
 
 
 def save_results(extractor_name, features):
@@ -56,17 +52,13 @@ def save_results(extractor_name, features):
 if __name__ == '__main__':
 
     # Inform the path to the rgb images
-    dataset = 'dataset/'
+    dataset = '../46/dataset/'
 
     # Grab all the paths to the images with extension .jpg
-    '''
-    The glob module finds all the pathnames matching a specified pattern according to the rules used by the Unix shell, 
-    although results are returned in arbitrary order. 
-    '''
     image_paths = glob.glob(os.path.join(dataset, '*.jpg'))
 
-    # Extract Spatial Moments
-    features = extract_spatial_moments(image_paths)
+    # Extract central Moments
+    features = extract_central_moments(image_paths)
 
     # Save the results in a csv file.
-    save_results('SpatialMoments', features)
+    save_results('CentralMoments', features)
