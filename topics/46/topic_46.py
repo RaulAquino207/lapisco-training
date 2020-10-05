@@ -56,7 +56,7 @@ def save_results(extractor_name, features):
 if __name__ == '__main__':
 
     # Inform the path to the rgb images
-    dataset = 'dataset/'
+    dataset = '../input_images/dataset'
 
     # Grab all the paths to the images with extension .jpg
     '''
