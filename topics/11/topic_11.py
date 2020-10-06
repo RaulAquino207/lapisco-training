@@ -42,12 +42,12 @@ xc = int(xc/count)
 yc = int(yc/count)
 print(xc,yc)
 #another way to do it is by using the moments method
-'''
-momentos = cv2.moments(objeto)
+
+momentos = cv.moments(transformed_image)
 cx = int(momentos['m10'] / momentos['m00'])
 cy = int(momentos['m01'] / momentos['m00'])
-print(cx, cy)
-'''
+print('moments', cx, cy)
+
 #cv.circle() method is used to draw a circle on any image.
 cv.circle(transformed_image, (xc,yc), 5, (255,255,255), -1)
 #showing the input images
