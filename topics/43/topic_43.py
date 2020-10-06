@@ -56,6 +56,7 @@ for k in blobs:
     # Get the coordinates of up_left and bottom_right
     print(k)
     print(k.size)
+    print('k.pt[0] k.pt[1]', k.pt[0], k.pt[1])
     x_up_left = int(k.pt[0] - k.size)
     y_up_left = int(k.pt[1] - k.size)
 
