@@ -1,4 +1,6 @@
 '''
+As questão 30-34 serão sobre o uso da função "cv.FindContours"
+
 Questão 30
 Abrir uma imagem colorida, transformar para tom de cinza e aplique a transformada de canny para detectar bordas.
 Apliquem o método cvFindContours para determinar quantos contornos existem na imagem.
