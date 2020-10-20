@@ -9,6 +9,7 @@ import cv2
 img = cv2.imread('../input_images/image.jpg')
 #the cv2 split function returns the 3 channels separately
 blue_channel, green_channel, red_channel = cv2.split(img)
+cv2.imshow('RGB original', img)
 cv2.imshow('Blue Channel', blue_channel)
 cv2.imshow('Green Channel', green_channel)
 cv2.imshow('Red Channel', red_channel)
