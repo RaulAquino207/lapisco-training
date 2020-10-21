@@ -87,6 +87,7 @@ if __name__ == '__main__':
 
     # Paint the segmented region
     for n in range(n_objects):
+        print(n)
         # create a lambda function to generate new colors for each object
         color = lambda: random.randint(0, 255)
 

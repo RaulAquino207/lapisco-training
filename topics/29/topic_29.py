@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 
 # Read a rgb image
-image = cv2.imread('../input_images/objects_circle.png')
+image = cv2.imread('../input_images/circles.png')
 
 # Transform to grayscale
 grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -18,6 +18,7 @@ grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 circles = cv2.HoughCircles(grayscale_image, cv2.HOUGH_GRADIENT, 1, 30,
                            param1=150, param2=25, minRadius=0, maxRadius=0)
 
+print(circles);
 try:
     circles = np.uint16(np.around(circles))
 except AttributeError:
