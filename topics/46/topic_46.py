@@ -5,6 +5,15 @@ As questões 46-52 serão sobre extração de atributos
 Abrir uma sequência de imagens coloridas, transformar para tom de cinza cada imagem e obtenha os momentos ESTATISTICOS
 de todas estas imagens. Imprima os resultados de cada imagem em um arquivo e na tela do prompt de comandos.
 Cada linha do arquivo gerado deve representar os atributos obtidos em uma imagem.
+
+spatial moments
+double m00, double m10,double m01,double m20,double m11,double m02,double m30,double m21,double m12,double 	m03
+
+central moments
+double mu20,double mu11,double mu02,double mu30,double mu21,double mu12,double 	mu03
+
+central normalized moments
+double nu20,double nu11,double nu02,double nu30,double nu21,double nu12,double nu03
 '''
 
 
@@ -32,6 +41,7 @@ def extract_spatial_moments(images):
         moments = cv2.moments(file)
         print('MOMENTS')
         print(moments)
+        print('-----------------------------------------------------------')
         # Create a list with the features extracted
         spatial_moments.append([moments['m00'], moments['m10'], moments['m01'], moments['m20'], moments['m11'],
                                 moments['m02'], moments['m30'], moments['m21'], moments['m12'], moments['m03']])
