@@ -4,6 +4,11 @@ Abrir uma sequência de imagens coloridas, transformar para tom de cinza cada im
 que são calculadas à partir da matriz de co-ocorrência (GLCM em inglês) de todas estas imagens. Imprima os resultados de
 cada imagem em um arquivo e na tela do prompt de comandos. Cada linha do arquivo gerado deve representar os atributos
 obtidos em uma imagem.
+
+Matriz de co-ocorrência de níveis de cinza (Gray Level Co-occurrence Matriz
+- GLCM) é um método estatístico para descriçãao de texturas. A GLCM armazena a probabilidade de que dois valores de intensidade de cinza estejam
+envolvidos por uma determinada relação espacial. A partir desta matriz de
+probabilidades, diferentes medidas estatísticas são extraídas a fim de caracterizar a textura presente na imagem.
 '''
 
 import cv2

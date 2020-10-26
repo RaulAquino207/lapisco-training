@@ -3,6 +3,9 @@ Questão 49
 Abrir uma sequência de imagens coloridas, transformar para tom de cinza cada imagem e obtenha os Local Binary Pattern (LBP)
 de todas estas imagens. Imprima os resultados de cada imagem em um arquivo e na tela do prompt de comandos.
 Cada linha do arquivo gerado deve representar os atributos obtidos em uma imagem.
+
+Local Binary Pattern (LBP) is a simple yet very efficient texture operator which labels the pixels of an image by thresholding the
+neighborhood of each pixel and considers the result as a binary number.
 '''
 
 import cv2
@@ -35,6 +38,7 @@ def extract_lbp(images, number_points, radius, eps=1e-7):
 
         hist = hist.astype('float')
         hist /= (hist.sum() + eps)
+        # print('hist', hist)
 
         # Create the feature vector extracted by lbp
         image_lbp = [item for item in list(hist)]
