@@ -7,8 +7,8 @@ na imagem.
 import cv2
 
 # Read the rgb images
-image = cv2.imread('../input_images/steering_wheel.jpg')
-logo = cv2.imread('../input_images/logo.jpg')
+image = cv2.imread('../input_images/mouse_image.jpeg')
+logo = cv2.imread('../input_images/mouse.jpeg')
 
 # Convert the images to grayscale
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -29,6 +29,7 @@ keypoints_2, descriptors_2 = orb.detectAndCompute(logo, None)
 
 # Create a BFMatcher object
 bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+# bf = cv2.BFMatcher(cv2.NORM_L1, crossCheck=True)
 
 # Match descriptors
 matches = bf.match(descriptors_1, descriptors_2)
