@@ -49,7 +49,6 @@ def hold_out(df, train_size, shuffle=True):
     # Remove the labels from the train and test vectors
     X_train = [x[:-1] for x in X_train]
     X_test = [x[:-1] for x in X_test]
-
     return X_train, X_test, y_train, y_test
 
 
@@ -103,6 +102,10 @@ def euclidean_dist(x1, x2):
 
 
 def knn_clf(X_train, X_test, y_train, k_neighbors=3):
+    '''
+    O assert é uma verificação em tempo de execução de uma condição qualquer. Se a condição não for verdadeira,
+    uma exceção AssertionError acontece e o programa para.
+    '''
     assert (k_neighbors % 2), 'Number of neighbors must be odd!'
 
     predict = []
