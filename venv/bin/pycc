@@ -1,3 +1,0 @@
-#!/home/raul/Github/lapisco-training/venv/bin/python
-from numba.pycc import main
-main()
