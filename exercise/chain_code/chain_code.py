@@ -84,10 +84,10 @@ class ChainCode():
         self.point = self.check_neighborhood_4(self.newImg, self.starPoint)
         while (self.point != self.starPoint):
             # print(self.point, self.starPoint)
-            cv.circle(self.imPlot, (self.point[1], self.point[0]), int(6), (0, 0, 255), 1)
+            cv.circle(self.imPlot, (self.point[1], self.point[0]), int(4), (0, 0, 255), 1)
             cv.imshow('image', self.imPlot)
             cv.waitKey(1)
-            cv.circle(self.imPlot, (self.point[1], self.point[0]), int(7), (0, 255, 255), 1)
+            cv.circle(self.imPlot, (self.point[1], self.point[0]), int(5), (0, 255, 255), 1)
             self.point = self.check_neighborhood_4(self.newImg, self.point)
 
         '''

@@ -18,6 +18,8 @@ class RecoveryImage():
             self.current_point = self.recovery_image(self.recovery_img, self.current_point, value)
             cv.imshow('recovery image', self.recovery_img)
             cv.waitKey(1)
+        # cv.imshow('recovery image', self.recovery_img)
+        # cv.waitKey(0)
 
     def recovery_image(self, recovery_img, point, chainCode):
         if chainCode == 0:

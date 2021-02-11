@@ -12,33 +12,25 @@ criar novos números a cada execução do código.
 class ModeChainCode():
     def __init__(self, chain_codes):
         self.chain_codes = np.array(chain_codes)
+        print(self.chain_codes.shape)
         self.most_frequent()
 
     def most_frequent(self):
         self.chain_code_mode = []
         col = 0
+        print(self.chain_codes.shape)
         print(self.chain_codes.shape[1])
         while (col != self.chain_codes.shape[1]):
             aux = self.chain_codes.transpose()[col]
-            aux2 = []
             # print(aux)
-            # value = statistics.mode(aux)
-            test = Counter(aux)
-            # print('Counter')
-            # print(test)
-            if (len(test) == 1):
-                for i in test:
-                    self.chain_code_mode.append(i)
+            value = statistics.multimode(aux)
+            # print(value)
+            if (len(value) == 1):
+                self.chain_code_mode.append(value[0])
             else:
                 rand = random.randint(0, 1)
-                for i in test:
-                    aux2.append(i)
-                # print(aux2)
-                # print(rand)
-                # print(aux2[rand])
-                self.chain_code_mode.append(aux2[rand])
-
-            # self.chain_code_mode.append(value)
+                self.chain_code_mode.append(value[rand])
             col = col + 1
-
+    
+        print(self.chain_code_mode)
         return (self.chain_code_mode)
