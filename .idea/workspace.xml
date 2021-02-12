@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3021fc97-39a4-432f-accd-c08fc85a221b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lapisco-training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lapisco-training.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/chain_code/black_box_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/chain_code/black_box_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/chain_code/chain_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/chain_code/chain_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/chain_code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/chain_code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/chain_code/mode_chain_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/chain_code/mode_chain_codes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/chain_code/recovery_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/chain_code/recovery_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/GLCM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/HUMoments.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/LBP.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/black_box_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/question_1/black_box_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/chain_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/question_1/chain_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/extractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/question_1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/mode_chain_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/question_1/mode_chain_codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/chain_code/recovery_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/question_1/recovery_image.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -50,8 +57,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="black_box_normalization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main (2)">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="lapisco-training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,12 +66,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/chain_code" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lapisco-training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/question_3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/chain_code/black_box_normalization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/question_3/a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lapisco-training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/question_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/question_3/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,16 +125,35 @@
       <module name="lapisco-training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/chain_code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/question_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/chain_code/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/question_1/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lapisco-training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/question_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/question_3/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +162,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mode_chain_codes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="topic_15" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lapisco-training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,56 +170,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/chain_code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/topics/15" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/chain_code/mode_chain_codes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lapisco-training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/chain_code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/chain_code/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lapisco-training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercise/chain_code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercise/chain_code/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topics/15/topic_15.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.black_box_normalization" />
-        <item itemvalue="Python.mode_chain_codes" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.a" />
+        <item itemvalue="Python.topic_15" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +213,14 @@
       <workItem from="1612829673547" duration="55165000" />
       <workItem from="1612960596015" duration="16342000" />
       <workItem from="1612983575993" duration="13418000" />
-      <workItem from="1613007325586" duration="5186000" />
+      <workItem from="1613007325586" duration="6159000" />
+      <workItem from="1613060306516" duration="3854000" />
+      <workItem from="1613133121586" duration="604000" />
+      <workItem from="1613136788350" duration="5103000" />
+      <workItem from="1613154341402" duration="2257000" />
+      <workItem from="1613158393117" duration="4527000" />
+      <workItem from="1613163004298" duration="555000" />
+      <workItem from="1613163665730" duration="8090000" />
     </task>
     <servers />
   </component>
@@ -211,14 +241,18 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lapisco_training$chain_code.coverage" NAME="chain_code Coverage Results" MODIFIED="1612919444457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
+    <SUITE FILE_PATH="coverage/lapisco_training$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1613064189952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/question_2" />
     <SUITE FILE_PATH="coverage/lapisco_training$black_box_normalization.coverage" NAME="black_box_normalization Coverage Results" MODIFIED="1612985314523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
-    <SUITE FILE_PATH="coverage/lapisco_training$test.coverage" NAME="test Coverage Results" MODIFIED="1612975538692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
     <SUITE FILE_PATH="coverage/lapisco_training$mode_chain_codes.coverage" NAME="mode_chain_codes Coverage Results" MODIFIED="1612977052440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
-    <SUITE FILE_PATH="coverage/lapisco_training$topic_6.coverage" NAME="topic_6 Coverage Results" MODIFIED="1612816304631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topics/6" />
-    <SUITE FILE_PATH="coverage/lapisco_training$chain_code2.coverage" NAME="chain_code2 Coverage Results" MODIFIED="1612815433714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
     <SUITE FILE_PATH="coverage/lapisco_training$topic_1.coverage" NAME="topic_1 Coverage Results" MODIFIED="1612472485935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topics/1" />
-    <SUITE FILE_PATH="coverage/lapisco_training$tests.coverage" NAME="tests Coverage Results" MODIFIED="1612974863422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
     <SUITE FILE_PATH="coverage/lapisco_training$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1612830907569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise" />
-    <SUITE FILE_PATH="coverage/lapisco_training$main.coverage" NAME="main Coverage Results" MODIFIED="1613012492597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
+    <SUITE FILE_PATH="coverage/lapisco_training$main.coverage" NAME="main Coverage Results" MODIFIED="1613012603222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
+    <SUITE FILE_PATH="coverage/lapisco_training$test.coverage" NAME="test Coverage Results" MODIFIED="1612975538692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
+    <SUITE FILE_PATH="coverage/lapisco_training$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1613167010038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/question_3" />
+    <SUITE FILE_PATH="coverage/lapisco_training$topic_6.coverage" NAME="topic_6 Coverage Results" MODIFIED="1612816304631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topics/6" />
+    <SUITE FILE_PATH="coverage/lapisco_training$topic_15.coverage" NAME="topic_15 Coverage Results" MODIFIED="1613162614029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topics/15" />
+    <SUITE FILE_PATH="coverage/lapisco_training$chain_code2.coverage" NAME="chain_code2 Coverage Results" MODIFIED="1612815433714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
+    <SUITE FILE_PATH="coverage/lapisco_training$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1613171716814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/question_3" />
+    <SUITE FILE_PATH="coverage/lapisco_training$tests.coverage" NAME="tests Coverage Results" MODIFIED="1612974863422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercise/chain_code" />
   </component>
 </project>
