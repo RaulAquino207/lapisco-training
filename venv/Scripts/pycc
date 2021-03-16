@@ -1,0 +1,3 @@
+#!C:\Users\aquin\Github\lapisco-training\venv\Scripts\python.exe
+from numba.pycc import main
+main()

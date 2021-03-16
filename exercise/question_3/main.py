@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import cv2 as cv
 
 #Taking the video frames.
-cap = cv.VideoCapture('with_out_birds.mp4')#switch to the video with birds 'with_birds.mp4'
+cap = cv.VideoCapture('\with_out_birds.mp4')#switch to the video with birds 'with_birds.mp4'
 _, frame = cap.read()
 r = cv.selectROI(frame)
 

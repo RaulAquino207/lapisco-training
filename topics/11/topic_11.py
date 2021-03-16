@@ -10,7 +10,7 @@ Xc será a média todas as coordenadas x que fazem parte do quadrado, e yc é as
 import cv2 as cv
 import numpy as np
 #loading the image into the variable img
-img = cv.imread('../input_images/white_black_square.jpg')
+img = cv.imread('../input_images/form.png')
 #transforming the image to grayscale
 grayscale_img_square = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 '''
@@ -50,6 +50,7 @@ print('moments', cx, cy)
 
 #cv.circle() method is used to draw a circle on any image.
 cv.circle(transformed_image, (xc,yc), 5, (255,255,255), -1)
+cv.circle(transformed_image, (cx,cy), 5, (255,255,255), -1)
 #showing the input images
 cv.imshow('image original', img)
 cv.imshow('image in grayscale', grayscale_img_square)
