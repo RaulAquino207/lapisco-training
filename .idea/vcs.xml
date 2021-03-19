@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/feature_extraction_signal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/object-detection/feature_extraction_signal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/object-detection/question_1/feature_extraction_signal" vcs="Git" />
   </component>
 </project>
