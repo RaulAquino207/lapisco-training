@@ -2,11 +2,6 @@ import cv2
 
 cap = cv2.VideoCapture('../Taiwan.mp4')
 
-ret, frame = cap.read()
-res = cv2.resize(frame, None, fx=.7, fy=.7, interpolation=cv2.INTER_BITS)
-res = cv2.cvtColor(res, cv2.COLOR_BGR2GRAY)
-
-
 selected = [0,0]
 while selected == [0,0]:
     _, frame = cap.read()
@@ -54,8 +49,7 @@ while(cap.isOpened()):
         sum += j
     print(sum)
 
-
-    if sum > 4000 and i > 1:
+    if sum > 2500 and i > 1:
         if bug != 1:
             print('Redefined template')
             new_b, new_d, new_a, new_c = previous_box
