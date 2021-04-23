@@ -60,6 +60,6 @@ ON UPDATE CASCADE
 SET SQL_SAFE_UPDATES = 0;
 -- DELETE FROM tbNovela;
 -- DELETE FROM tbAtor;
--- DELETE FROM tbCapitulo;
+DELETE FROM tbCapitulo;
 -- DELETE FROM tbPersonagem;
 -- DELETE FROM tbNovelaPersonagem;
