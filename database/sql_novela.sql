@@ -23,7 +23,7 @@ CONSTRAINT pk_tbAtor PRIMARY KEY (codigo_ator)
 );
 
 CREATE TABLE tbCapitulo
-(codigo_capitulo INT,
+(codigo_capitulo INT AUTO_INCREMENT,
 nome_capitulo VARCHAR(50) NOT NULL,
 data_exibicao_capitulo DATE,
 
@@ -60,6 +60,6 @@ ON UPDATE CASCADE
 SET SQL_SAFE_UPDATES = 0;
 -- DELETE FROM tbNovela;
 -- DELETE FROM tbAtor;
-DELETE FROM tbCapitulo;
+-- DELETE FROM tbCapitulo;
 -- DELETE FROM tbPersonagem;
 -- DELETE FROM tbNovelaPersonagem;
