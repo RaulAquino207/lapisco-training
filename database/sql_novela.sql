@@ -63,3 +63,6 @@ SET SQL_SAFE_UPDATES = 0;
 -- DELETE FROM tbCapitulo;
 -- DELETE FROM tbPersonagem;
 -- DELETE FROM tbNovelaPersonagem;
+
+SELECT N.nome_novela, N.codigo_novela FROM tbNovela AS N
+INNER JOIN tbCapitulo as C ON N.codigo_novela = C.codigo_novela
